@@ -163,14 +163,14 @@ h4 {
   fill: var(--primary);
 }
 
-.section-margin {
-  margin: 94px 0px;
+.section {
+  padding: 94px 0px;
 }
-.section-margin_bottom {
-  margin-top: 0px;
+.section_half-bottom {
+  padding-bottom: 47px;
 }
-.section-margin_top {
-  margin-bottom: 0px;
+.section_half-top {
+  padding-top: 47px;
 }
 
 .silver-section {
@@ -313,7 +313,6 @@ h4 {
   justify-content: center;
   flex-direction: column;
   min-height: 600px;
-  padding: 100px 0px;
 }
 .main-banner h1 {
   max-width: 696px;
@@ -330,10 +329,6 @@ h4 {
   color: var(--second-dark);
 }
 
-.our-employees {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .our-employees__item {
   box-shadow: 0px 3px 4px 0px gray;
   border-radius: 0px 0px 4px 4px;
