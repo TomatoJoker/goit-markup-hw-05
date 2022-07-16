@@ -305,7 +305,6 @@ h4 {
 
 .main-banner {
   display: block;
-  height: 600px;
   background: var(--dark);
 }
 .main-banner__inner {
@@ -313,7 +312,8 @@ h4 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 600px;
+  min-height: 600px;
+  padding: 100px 0px;
 }
 .main-banner h1 {
   max-width: 696px;
