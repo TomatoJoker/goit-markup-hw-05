@@ -166,11 +166,11 @@ h4 {
 .section {
   padding: 94px 0px;
 }
-.section_half-bottom {
-  padding-bottom: 47px;
+.section_bottom {
+  padding-top: 0px;
 }
-.section_half-top {
-  padding-top: 47px;
+.section_top {
+  padding-bottom: 0px;
 }
 
 .silver-section {
