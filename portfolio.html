@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="header__left">
-                        <a href="#" class="logo header__logo">
+                        <a href="./index.html" class="logo header__logo">
                             <span>Web</span>Studio
                         </a>
                         <nav class="menu">
@@ -57,75 +57,85 @@
         <div class="main">
             <section class="portfolio section">
                 <div class="container">
-                    <div class="portfolio__tabs tabs">
-                        <a href="#" class="tabs__item btn btn__second btn__second_active">Все</a>
-                        <a href="#" class="tabs__item btn btn__second">Веб-сайти</a>
-                        <a href="#" class="tabs__item btn btn__second">Додатки</a>
-                        <a href="#" class="tabs__item btn btn__second">Дизайн</a>
-                        <a href="#" class="tabs__item btn btn__second">Маркетинг</a>
-                    </div>
+                    <ul class="portfolio__tabs tabs">
+                        <li>
+                            <button class="tabs__item btn btn__second btn__second_active">Все</button>
+                        </li>
+                        <li>
+                            <button class="tabs__item btn btn__second">Веб-сайти</button>
+                        </li>
+                        <li>
+                            <button class="tabs__item btn btn__second">Додатки</button>
+                        </li>
+                        <li>
+                            <button class="tabs__item btn btn__second">Дизайн</button>
+                        </li>
+                        <li>
+                            <button class="tabs__item btn btn__second">Маркетинг</button>
+                        </li>
+                    </ul>
                     <ul class="portfolio__inner">
                         <li class="portfolio__item">
                             <img src="./images/portfolio-1.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Технокряк</h3>
-                                <span class="portfolio__sub-title sub-title">Веб-сайт</span>
+                                <p class="portfolio__sub-title sub-title">Веб-сайт</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-2.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Постер New Orlean vs Golden Star</h3>
-                                <span class="portfolio__sub-title sub-title">Product Designer</span>
+                                <p class="portfolio__sub-title sub-title">Product Designer</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-3.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Ресторан Seafood</h3>
-                                <span class="portfolio__sub-title sub-title">Додаток</span>
+                                <p class="portfolio__sub-title sub-title">Додаток</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-4.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Проєкт Prime</h3>
-                                <span class="portfolio__sub-title sub-title">Маркетинг</span>
+                                <p class="portfolio__sub-title sub-title">Маркетинг</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-4.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Проєкт Boxes</h3>
-                                <span class="portfolio__sub-title sub-title">Додаток</span>
+                                <p class="portfolio__sub-title sub-title">Додаток</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-5.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Inspiration has no Borders</h3>
-                                <span class="portfolio__sub-title sub-title">Веб-сайт</span>
+                                <p class="portfolio__sub-title sub-title">Веб-сайт</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-6.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Видання Limited Edition</h3>
-                                <span class="portfolio__sub-title sub-title">Дизайн</span>
+                                <p class="portfolio__sub-title sub-title">Дизайн</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-7.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Проект LAB</h3>
-                                <span class="portfolio__sub-title sub-title">Маркетинг</span>
+                                <p class="portfolio__sub-title sub-title">Маркетинг</p>
                             </div>
                         </li>
                         <li class="portfolio__item">
                             <img src="./images/portfolio-8.jpg" width="370" height="294" alt="Игорь Демьяненко">
                             <div class="portfolio__bottom">
                                 <h3>Growing Business</h3>
-                                <span class="portfolio__sub-title sub-title">Додаток</span>
+                                <p class="portfolio__sub-title sub-title">Додаток</p>
                             </div>
                         </li>
                     </ul>
@@ -134,7 +144,7 @@
         </div>
         <footer class="footer">
             <div class="container">
-                <a href="#" class="logo footer__logo">
+                <a href="./index.html" class="logo footer__logo">
                     <span>Web</span>Studio
                 </a>
                 <address class="footer__col">
