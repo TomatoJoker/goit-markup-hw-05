@@ -144,6 +144,8 @@ h2 {
 h3 {
   font-size: 18px;
   line-height: 2;
+}
+h3:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -564,6 +566,35 @@ button {
   color: var(--second-dark);
 }
 
+.we-doing__item {
+  position: relative;
+}
+.we-doing__cover {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 27px 10px;
+}
+.we-doing__cover:before {
+  content: "";
+  background: var(--dark);
+  opacity: 0.8;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.we-doing__cover h3 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 .our-employees__title {
   font-size: 16px;
   line-height: 1.19;
@@ -629,17 +660,56 @@ button {
   }
 }
 .portfolio__item {
+  overflow: hidden;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
 .portfolio__item:hover {
   box-shadow: 0px 3px 4px 0px gray;
 }
+.portfolio__item:hover .portfolio__desc {
+  transform: translateY(0);
+}
+.portfolio__top {
+  position: relative;
+  z-index: 1;
+}
+.portfolio__desc {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
+}
+.portfolio__desc:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: var(--primary);
+  opacity: 0.9;
+}
+.portfolio__desc p {
+  font-size: 18px;
+  line-height: 1.55;
+  position: relative;
+  color: var(--white);
+}
 .portfolio__bottom {
   padding: 20px 24px;
   border: 1px solid var(--second-light);
   border-top: none;
-  max-width: calc(100% - 2px);
   margin: auto;
+  position: relative;
+  z-index: 2;
+  background: var(--white);
 }
 .portfolio__sub-title {
   line-height: 1.87;
