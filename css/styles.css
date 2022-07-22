@@ -65,7 +65,7 @@ img {
   line-height: 31px;
   color: var(--dark-text);
   letter-spacing: 0.03em;
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
   position: relative;
 }
 .logo:after {
@@ -182,7 +182,7 @@ button {
   display: inline-flex;
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
 .contact-info .icon {
   margin-right: 10px;
@@ -256,7 +256,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
 .social__item:hover {
   background: var(--primary);
@@ -297,7 +297,7 @@ button {
 }
 .menu__item a,
 .menu__item span {
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -377,7 +377,7 @@ button {
   padding-bottom: 10px;
   font-size: 16px;
   border-radius: 4px;
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -413,24 +413,79 @@ button {
   box-shadow: 0px 3px 4px -1px gray;
 }
 
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
+}
+.modal_open {
+  visibility: visible;
+}
+.modal_open .modal__inner {
+  transform: translateY(0);
+}
+.modal_open .modal__overlay {
+  opacity: 1;
+}
+.modal__overlay {
+  position: absolute;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  transition: inherit;
+  opacity: 0;
+}
+.modal__inner {
+  position: relative;
+  z-index: 2;
+  width: 528px;
+  min-height: 581px;
+  background: var(--white);
+  padding: 8px;
+  transition: inherit;
+  transform: translateY(110vh);
+}
+.modal__form {
+  position: relative;
+}
+.modal__form .close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
+}
+.close:hover .icon {
+  fill: var(--primary);
+}
+.close .icon {
+  font-size: 18px;
+  transition: inherit;
+}
+
 .main-banner {
   display: block;
-  background: var(--dark);
-  background: url("../images/background.jpg");
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
-}
-.main-banner:after {
-  position: absolute;
-  content: "";
-  background: rgba(47, 48, 58, 0.4);
-  display: block;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-  z-index: 1;
 }
 .main-banner__inner {
   display: flex;
@@ -497,7 +552,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
 .customer__item:hover {
   border-color: var(--primary);
@@ -535,10 +590,10 @@ button {
   }
 }
 .portfolio__item {
-  transition: 0.3s ease all;
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
 .portfolio__item:hover {
-  box-shadow: 0px 10px 4px -4px gray;
+  box-shadow: 0px 3px 4px 0px gray;
 }
 .portfolio__bottom {
   padding: 20px 24px;
