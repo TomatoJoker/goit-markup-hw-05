@@ -81,13 +81,13 @@ img {
 .logo span {
   color: var(--primary);
 }
-.logo:hover {
+.logo:hover, .logo:focus {
   color: var(--primary);
 }
-.logo:hover span {
+.logo:hover span, .logo:focus span {
   color: var(--dark-text);
 }
-.logo:hover:after {
+.logo:hover:after, .logo:focus:after {
   width: 100%;
   background: var(--dark-text);
 }
@@ -190,10 +190,10 @@ button {
   margin-right: 10px;
   fill: var(--second-dark);
 }
-.contact-info:hover {
+.contact-info:hover, .contact-info:focus {
   color: var(--primary);
 }
-.contact-info:hover .icon {
+.contact-info:hover .icon, .contact-info:focus .icon {
   fill: var(--primary);
 }
 
@@ -275,10 +275,10 @@ button {
   transition: inherit;
   z-index: 1;
 }
-.social__item:hover:before {
+.social__item:hover:before, .social__item:focus:before {
   transform: scale(1);
 }
-.social__item:hover .icon {
+.social__item:hover .icon, .social__item:focus .icon {
   fill: white;
   z-index: 2;
 }
@@ -344,10 +344,10 @@ button {
   opacity: 1;
   visibility: visible;
 }
-.menu__item:hover a {
+.menu__item:hover a, .menu__item:focus a, .menu__item:focus-within a {
   color: var(--primary);
 }
-.menu__item:hover a:after {
+.menu__item:hover a:after, .menu__item:focus a:after, .menu__item:focus-within a:after {
   opacity: 1;
   visibility: visible;
 }
@@ -358,6 +358,7 @@ button {
 }
 .footer .row {
   justify-content: flex-start;
+  align-items: baseline;
 }
 @supports (column-gap: 70px) {
   .footer .row {
@@ -378,10 +379,10 @@ button {
   margin-bottom: 20px;
   color: var(--white);
 }
-.footer__logo:hover span {
+.footer__logo:hover span, .footer__logo:focus span {
   color: var(--white);
 }
-.footer__logo:hover:after {
+.footer__logo:hover:after, .footer__logo:focus:after {
   background: var(--white);
 }
 .footer__col {
@@ -398,7 +399,7 @@ button {
 .footer .contact-info {
   font-weight: 400;
 }
-.footer .contact-info:not(:hover) {
+.footer .contact-info:not(:hover, :focus) {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer_address {
@@ -409,6 +410,8 @@ button {
   font-size: 14px;
   line-height: 1.14;
   color: var(--white);
+}
+.footer__title:not(:last-child) {
   margin-bottom: 20px;
 }
 .footer .social__item:not(:hover) {
@@ -437,7 +440,7 @@ button {
   min-width: 216px;
   letter-spacing: 0.06em;
 }
-.btn__primary:hover {
+.btn__primary:hover, .btn__primary:focus {
   background: rgba(255, 255, 255, 0);
   color: var(--primary);
 }
@@ -448,7 +451,7 @@ button {
   background: var(--second);
   color: var(--dark-text);
 }
-.btn__second:hover, .btn__second_active {
+.btn__second:hover, .btn__second:focus, .btn__second_active {
   background: var(--primary);
   color: var(--white);
 }
@@ -513,7 +516,7 @@ button {
   cursor: pointer;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
-.close:hover .icon {
+.close:hover .icon, .close:focus .icon {
   fill: var(--primary);
 }
 .close .icon {
@@ -624,10 +627,10 @@ button {
   justify-content: center;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
-.customer__item:hover {
+.customer__item:hover, .customer__item:focus {
   border-color: var(--primary);
 }
-.customer__item:hover .icon {
+.customer__item:hover .icon, .customer__item:focus .icon {
   fill: var(--primary);
 }
 .customer__item .icon {
@@ -663,10 +666,10 @@ button {
   overflow: hidden;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
 }
-.portfolio__item:hover {
+.portfolio__item:hover, .portfolio__item:focus {
   box-shadow: 0px 3px 4px 0px gray;
 }
-.portfolio__item:hover .portfolio__desc {
+.portfolio__item:hover .portfolio__desc, .portfolio__item:focus .portfolio__desc {
   transform: translateY(0);
 }
 .portfolio__top {
