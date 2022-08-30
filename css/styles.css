@@ -347,10 +347,6 @@ button {
 .menu__item:hover a, .menu__item:focus a, .menu__item:focus-within a {
   color: var(--primary);
 }
-.menu__item:hover a:after, .menu__item:focus a:after, .menu__item:focus-within a:after {
-  opacity: 1;
-  visibility: visible;
-}
 
 .footer {
   background: var(--dark);
