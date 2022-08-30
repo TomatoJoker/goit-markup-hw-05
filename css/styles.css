@@ -387,10 +387,10 @@ button {
   flex-direction: column;
   align-items: flex-start;
 }
-.footer__item {
+.footer__col .footer__item {
   line-height: 1.71;
 }
-.footer__item:not(:last-child) {
+.footer__col .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer .contact-info {
