@@ -260,6 +260,7 @@ button {
   justify-content: center;
   transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1) all;
   position: relative;
+  background: rgba(255, 255, 255, 0.1);
 }
 .social__item:before {
   position: absolute;
@@ -409,9 +410,6 @@ button {
 }
 .footer__title:not(:last-child) {
   margin-bottom: 20px;
-}
-.footer .social__item:not(:hover) {
-  background: rgba(255, 255, 255, 0.1);
 }
 
 .btn {
