@@ -592,6 +592,9 @@ button {
   line-height: 1.14;
 }
 
+.our-employees {
+  background: var(--white);
+}
 .our-employees__title {
   font-size: 16px;
   line-height: 1.19;
